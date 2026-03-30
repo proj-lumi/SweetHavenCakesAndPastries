@@ -14,6 +14,7 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -26,7 +27,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -89,6 +89,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmCustomer.Designer.vb">
+      <DependentUpon>frmCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmDashboard.Designer.vb">
       <DependentUpon>frmDashboard.vb</DependentUpon>
     </Compile>
@@ -102,10 +108,28 @@
       <DependentUpon>frmMain.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmProducts.Designer.vb">
-      <DependentUpon>frmProducts.vb</DependentUpon>
+    <Compile Include="frmProduct.Designer.vb">
+      <DependentUpon>frmProduct.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmProducts.vb">
+    <Compile Include="frmProduct.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPurchase.Designer.vb">
+      <DependentUpon>frmPurchase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSales.Designer.vb">
+      <DependentUpon>frmSales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSupplier.Designer.vb">
+      <DependentUpon>frmSupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSupplier.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -126,14 +150,26 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmCustomer.resx">
+      <DependentUpon>frmCustomer.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDashboard.resx">
       <DependentUpon>frmDashboard.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmProducts.resx">
-      <DependentUpon>frmProducts.vb</DependentUpon>
+    <EmbeddedResource Include="frmProduct.resx">
+      <DependentUpon>frmProduct.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPurchase.resx">
+      <DependentUpon>frmPurchase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSales.resx">
+      <DependentUpon>frmSales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSupplier.resx">
+      <DependentUpon>frmSupplier.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -165,6 +201,57 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customers_active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customers_inactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sales_active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sales_inactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchases_active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchases_inactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suppliers_active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suppliers_inactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\products_active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\products_inactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard_active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard_inactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\products.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sales.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchases.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suppliers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customers.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

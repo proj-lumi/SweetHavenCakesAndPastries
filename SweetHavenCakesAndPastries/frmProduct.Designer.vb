@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmProducts
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class frmProduct
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,15 +20,15 @@ Partial Class frmProducts
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.gbProductInformation = New System.Windows.Forms.GroupBox()
         Me.txtProductCost = New System.Windows.Forms.TextBox()
         Me.lblProductCost = New System.Windows.Forms.Label()
-        Me.btnClearProduct = New System.Windows.Forms.Button()
-        Me.btnDeleteProduct = New System.Windows.Forms.Button()
-        Me.btnUpdateProduct = New System.Windows.Forms.Button()
-        Me.btnAddProduct = New System.Windows.Forms.Button()
+        Me.btnClear = New System.Windows.Forms.Button()
+        Me.btnDelete = New System.Windows.Forms.Button()
+        Me.btnUpdate = New System.Windows.Forms.Button()
+        Me.btnAdd = New System.Windows.Forms.Button()
         Me.txtProductStock = New System.Windows.Forms.TextBox()
         Me.lblProductStock = New System.Windows.Forms.Label()
         Me.txtProductPrice = New System.Windows.Forms.TextBox()
@@ -38,20 +38,21 @@ Partial Class frmProducts
         Me.txtProductID = New System.Windows.Forms.TextBox()
         Me.lblProductID = New System.Windows.Forms.Label()
         Me.gbProducts = New System.Windows.Forms.GroupBox()
-        Me.dgvProducts = New System.Windows.Forms.DataGridView()
+        Me.dgvList = New System.Windows.Forms.DataGridView()
         Me.gbProductInformation.SuspendLayout()
         Me.gbProducts.SuspendLayout()
-        CType(Me.dgvProducts, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvList, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'gbProductInformation
         '
+        Me.gbProductInformation.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(245, Byte), Integer))
         Me.gbProductInformation.Controls.Add(Me.txtProductCost)
         Me.gbProductInformation.Controls.Add(Me.lblProductCost)
-        Me.gbProductInformation.Controls.Add(Me.btnClearProduct)
-        Me.gbProductInformation.Controls.Add(Me.btnDeleteProduct)
-        Me.gbProductInformation.Controls.Add(Me.btnUpdateProduct)
-        Me.gbProductInformation.Controls.Add(Me.btnAddProduct)
+        Me.gbProductInformation.Controls.Add(Me.btnClear)
+        Me.gbProductInformation.Controls.Add(Me.btnDelete)
+        Me.gbProductInformation.Controls.Add(Me.btnUpdate)
+        Me.gbProductInformation.Controls.Add(Me.btnAdd)
         Me.gbProductInformation.Controls.Add(Me.txtProductStock)
         Me.gbProductInformation.Controls.Add(Me.lblProductStock)
         Me.gbProductInformation.Controls.Add(Me.txtProductPrice)
@@ -72,7 +73,7 @@ Partial Class frmProducts
         Me.txtProductCost.Location = New System.Drawing.Point(324, 35)
         Me.txtProductCost.Name = "txtProductCost"
         Me.txtProductCost.Size = New System.Drawing.Size(150, 20)
-        Me.txtProductCost.TabIndex = 13
+        Me.txtProductCost.TabIndex = 3
         '
         'lblProductCost
         '
@@ -83,48 +84,48 @@ Partial Class frmProducts
         Me.lblProductCost.TabIndex = 12
         Me.lblProductCost.Text = "Cost"
         '
-        'btnClearProduct
+        'btnClear
         '
-        Me.btnClearProduct.Location = New System.Drawing.Point(255, 61)
-        Me.btnClearProduct.Name = "btnClearProduct"
-        Me.btnClearProduct.Size = New System.Drawing.Size(75, 23)
-        Me.btnClearProduct.TabIndex = 11
-        Me.btnClearProduct.Text = "Clear"
-        Me.btnClearProduct.UseVisualStyleBackColor = True
+        Me.btnClear.Location = New System.Drawing.Point(255, 61)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(75, 23)
+        Me.btnClear.TabIndex = 9
+        Me.btnClear.Text = "Clear"
+        Me.btnClear.UseVisualStyleBackColor = True
         '
-        'btnDeleteProduct
+        'btnDelete
         '
-        Me.btnDeleteProduct.Location = New System.Drawing.Point(174, 61)
-        Me.btnDeleteProduct.Name = "btnDeleteProduct"
-        Me.btnDeleteProduct.Size = New System.Drawing.Size(75, 23)
-        Me.btnDeleteProduct.TabIndex = 10
-        Me.btnDeleteProduct.Text = "Delete"
-        Me.btnDeleteProduct.UseVisualStyleBackColor = True
+        Me.btnDelete.Location = New System.Drawing.Point(174, 61)
+        Me.btnDelete.Name = "btnDelete"
+        Me.btnDelete.Size = New System.Drawing.Size(75, 23)
+        Me.btnDelete.TabIndex = 8
+        Me.btnDelete.Text = "Delete"
+        Me.btnDelete.UseVisualStyleBackColor = True
         '
-        'btnUpdateProduct
+        'btnUpdate
         '
-        Me.btnUpdateProduct.Location = New System.Drawing.Point(93, 61)
-        Me.btnUpdateProduct.Name = "btnUpdateProduct"
-        Me.btnUpdateProduct.Size = New System.Drawing.Size(75, 23)
-        Me.btnUpdateProduct.TabIndex = 9
-        Me.btnUpdateProduct.Text = "Update"
-        Me.btnUpdateProduct.UseVisualStyleBackColor = True
+        Me.btnUpdate.Location = New System.Drawing.Point(93, 61)
+        Me.btnUpdate.Name = "btnUpdate"
+        Me.btnUpdate.Size = New System.Drawing.Size(75, 23)
+        Me.btnUpdate.TabIndex = 7
+        Me.btnUpdate.Text = "Update"
+        Me.btnUpdate.UseVisualStyleBackColor = True
         '
-        'btnAddProduct
+        'btnAdd
         '
-        Me.btnAddProduct.Location = New System.Drawing.Point(12, 61)
-        Me.btnAddProduct.Name = "btnAddProduct"
-        Me.btnAddProduct.Size = New System.Drawing.Size(75, 23)
-        Me.btnAddProduct.TabIndex = 8
-        Me.btnAddProduct.Text = "Add New"
-        Me.btnAddProduct.UseVisualStyleBackColor = True
+        Me.btnAdd.Location = New System.Drawing.Point(12, 61)
+        Me.btnAdd.Name = "btnAdd"
+        Me.btnAdd.Size = New System.Drawing.Size(75, 23)
+        Me.btnAdd.TabIndex = 6
+        Me.btnAdd.Text = "Add New"
+        Me.btnAdd.UseVisualStyleBackColor = True
         '
         'txtProductStock
         '
         Me.txtProductStock.Location = New System.Drawing.Point(636, 35)
         Me.txtProductStock.Name = "txtProductStock"
         Me.txtProductStock.Size = New System.Drawing.Size(75, 20)
-        Me.txtProductStock.TabIndex = 7
+        Me.txtProductStock.TabIndex = 5
         '
         'lblProductStock
         '
@@ -140,7 +141,7 @@ Partial Class frmProducts
         Me.txtProductPrice.Location = New System.Drawing.Point(480, 35)
         Me.txtProductPrice.Name = "txtProductPrice"
         Me.txtProductPrice.Size = New System.Drawing.Size(150, 20)
-        Me.txtProductPrice.TabIndex = 5
+        Me.txtProductPrice.TabIndex = 4
         '
         'lblProductPrice
         '
@@ -156,7 +157,7 @@ Partial Class frmProducts
         Me.txtProductName.Location = New System.Drawing.Point(93, 35)
         Me.txtProductName.Name = "txtProductName"
         Me.txtProductName.Size = New System.Drawing.Size(225, 20)
-        Me.txtProductName.TabIndex = 3
+        Me.txtProductName.TabIndex = 2
         '
         'lblProductName
         '
@@ -185,7 +186,7 @@ Partial Class frmProducts
         '
         'gbProducts
         '
-        Me.gbProducts.Controls.Add(Me.dgvProducts)
+        Me.gbProducts.Controls.Add(Me.dgvList)
         Me.gbProducts.Location = New System.Drawing.Point(12, 116)
         Me.gbProducts.Name = "gbProducts"
         Me.gbProducts.Size = New System.Drawing.Size(720, 373)
@@ -193,41 +194,45 @@ Partial Class frmProducts
         Me.gbProducts.TabStop = False
         Me.gbProducts.Text = "Product List"
         '
-        'dgvProducts
+        'dgvList
         '
-        Me.dgvProducts.AllowUserToAddRows = False
-        Me.dgvProducts.AllowUserToDeleteRows = False
-        Me.dgvProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvProducts.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dgvProducts.Location = New System.Drawing.Point(3, 16)
-        Me.dgvProducts.Name = "dgvProducts"
-        Me.dgvProducts.ReadOnly = True
-        Me.dgvProducts.Size = New System.Drawing.Size(714, 354)
-        Me.dgvProducts.TabIndex = 0
+        Me.dgvList.AllowUserToAddRows = False
+        Me.dgvList.AllowUserToDeleteRows = False
+        Me.dgvList.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.dgvList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvList.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgvList.GridColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.dgvList.Location = New System.Drawing.Point(3, 16)
+        Me.dgvList.Name = "dgvList"
+        Me.dgvList.ReadOnly = True
+        Me.dgvList.Size = New System.Drawing.Size(714, 354)
+        Me.dgvList.TabIndex = 0
+        Me.dgvList.TabStop = False
         '
-        'frmProducts
+        'frmProduct
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(232, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(744, 501)
         Me.Controls.Add(Me.gbProducts)
         Me.Controls.Add(Me.gbProductInformation)
-        Me.Name = "frmProducts"
-        Me.Text = "Products"
+        Me.Name = "frmProduct"
+        Me.Text = "Product"
         Me.gbProductInformation.ResumeLayout(False)
         Me.gbProductInformation.PerformLayout()
         Me.gbProducts.ResumeLayout(False)
-        CType(Me.dgvProducts, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvList, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents gbProductInformation As GroupBox
     Friend WithEvents txtProductID As TextBox
     Friend WithEvents lblProductID As Label
-    Friend WithEvents btnClearProduct As Button
-    Friend WithEvents btnDeleteProduct As Button
-    Friend WithEvents btnUpdateProduct As Button
-    Friend WithEvents btnAddProduct As Button
+    Friend WithEvents btnClear As Button
+    Friend WithEvents btnDelete As Button
+    Friend WithEvents btnUpdate As Button
+    Friend WithEvents btnAdd As Button
     Friend WithEvents txtProductStock As TextBox
     Friend WithEvents lblProductStock As Label
     Friend WithEvents txtProductPrice As TextBox
@@ -237,5 +242,5 @@ Partial Class frmProducts
     Friend WithEvents txtProductCost As TextBox
     Friend WithEvents lblProductCost As Label
     Friend WithEvents gbProducts As GroupBox
-    Friend WithEvents dgvProducts As DataGridView
+    Friend WithEvents dgvList As DataGridView
 End Class
