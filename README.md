@@ -47,12 +47,3 @@ This wasn't a UI project with a database bolted on — it's the reverse. The dat
 | MySQL | the single shared `sweet_haven` database |
 | MySql.Data / ADO.NET | DataAdapter, DataSet, and all CRUD queries |
 | Visual Studio `.slnx` | solution and project management |
-
-## Running the project
-
-1. **Start MySQL** locally and create the `sweet_haven` database with tables for `customer`, `product`, `supplier`, `sales`, and `purchase` (schema is not included in the repo).
-2. Open `SweetHavenCakesAndPastries.slnx` in Visual Studio (2019+).
-3. **Restore the NuGet package** for `MySql.Data` (referenced in the project).
-4. Run — the app connects with `datasource=localhost;username=root;password=;database=sweet_haven` (adjust in code if your MySQL credentials differ).
-
----
