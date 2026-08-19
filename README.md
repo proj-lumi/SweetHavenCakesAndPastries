@@ -2,7 +2,7 @@
 
 A Windows desktop point-of-sale and inventory system for a bakery — tracking products, customers, suppliers, sales, and purchases against a shared MySQL database, all from a single dashboard.
 
-Final project for **CCS 5 (Fundamentals of Information Management)**, Silliman University College of Computer Studies. Built as a team; the whole point of the course was to learn how to interact with a database — so everything here hangs off one: all records, every CRUD operation, and the dashboard's numbers come straight from SQL queries against a live MySQL server.
+Final project for **CCS 5 (Fundamentals of Information Management)**, Silliman University College of Computer Studies — a learning project, built mainly to practice how to interact with a database. Everything here hangs off one: all records, every CRUD operation, and the dashboard's numbers come straight from SQL queries against a live MySQL server.
 
 ## Screenshots
 
@@ -15,13 +15,13 @@ Final project for **CCS 5 (Fundamentals of Information Management)**, Silliman U
 
 ---
 
-## Problem
+## Why a bakery?
 
-Small bakeries track inventory, customers, and daily sales the old way — on paper or in disjoint notes. Pricing varies per product, stock goes uncounted until it runs out, and no one can say at a glance whether the day's sales actually covered the cost of ingredients.
+A class project isn't a product — it's an exercise. The aim of CCS 5 was to learn how to build an application *around* a database, so we picked a domain where the data model is easy to see: a bakery's day-to-day recordkeeping. It's simple enough to reason about — products, customers, suppliers, sales, and purchases — yet rich enough to practice real database work: related tables, full CRUD on every entity, and aggregate queries that span them.
 
 ## Solution
 
-A single desktop app where everything is connected through the database:
+The result is a Windows desktop app where every screen reads and writes through the same MySQL database:
 
 - **Dashboard** — live counts for every module plus computed totals: revenue from sales (`quantity × selling price`) and spend from purchases (`quantity × cost`), all summed in SQL
 - **Products** — inventory with cost, selling price, and stock, linked to their suppliers
